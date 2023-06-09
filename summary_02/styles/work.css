@@ -12,15 +12,12 @@ img {
 
 .flex-container {
     border: 1px solid blue;
-    width: 700px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .box {
-    flex-basis: 300px;
-    flex-shrink: 0;
+    width: 300px;
     height: 300px;
     border: 1px solid black
 }
@@ -31,7 +28,6 @@ img {
 
 .box2 {
     background-color: yellow;
-    flex-shrink: 1;
 }
 
 .box3 {
