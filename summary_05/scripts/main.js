@@ -73,5 +73,3 @@ function renderProduct(product) {
     // добавляем наш товар в контейнер
     productsContainer.append(productContainer);
 }
-
-products.forEach(product => renderProduct(product));
