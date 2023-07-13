@@ -49,6 +49,7 @@
  - отрендерит этот массив
 
 ### Полезные ссылки
+ - [Деструктуризация](https://learn.javascript.ru/destructuring-assignment)
  - [Циклы](https://learn.javascript.ru/while-for) и [массивы](https://learn.javascript.ru/array)
  - Ссылка на [спецификацию](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) метода push. Кроме этого, там описаны все методы массивов. Рекомендуется использовать как справочник.
  - Русскоязычный гайд по [функциям](https://learn.javascript.ru/function-basics)
