@@ -68,3 +68,57 @@ img {
 .buttonCancel {
     background-color: gray;
 }
+
+.todoListHeader {
+    display: flex;
+    gap: 15px;
+}
+
+.todoListHeaderText {
+    margin: 0 0 0 30px;
+}
+
+/*
+2. Пишем функцию для рендера карточки списка добрых дел (`renderTodo`). Она принимает в качестве аргумента объект, который содержит данные нашего дела. Ее задача - создать и вернуть DOM-элемент (ТОЛЬКО СОЗДАТЬ, но не добавлять в DOM!). Кнопку удаления (красную кнопку в правом верхнем углу) пока не рисуем.
+ - контейнер дела - `todoContainer`
+ - заголовок дела - id не ставим, класс - `todoHeader`
+ - описание дела - id не ставим, класс - `todoDescription`
+ - статус дела - id не ставим, класс - `todoStatus`
+ - чекбокс на правой стороне никак не стилизуем, используем обычный input type='checkbox'
+ */
+
+ .todoContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: aliceblue;
+ }
+
+ .todoText {}
+
+ .todoHeader {
+    font-size: 18px;
+    color: #0096CD;
+    font-weight: 700;
+ }
+
+ .todoDescription {
+    font-size: 16px;
+    color: blue;
+ }
+
+ .todoStatus {
+    font-size: 18px;
+    font-weight: 700;
+ }
+
+ .todoCompleted {
+    color: green;
+ }
+
+ .todoIncompleted {
+    color: red;
+ }
