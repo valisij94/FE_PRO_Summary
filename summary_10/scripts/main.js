@@ -1,0 +1,1 @@
+const testString1 = 'Test String with several spaces';
