@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function AttemptsList( {attempts, dropAttempt} ) {
+function AttemptsList( {attempts, dropAttempt} ) {
 
-  console.log('Render atempts list')
+  console.log('Render attemts list')
   return (
     <div>
       {
@@ -22,3 +22,5 @@ export default function AttemptsList( {attempts, dropAttempt} ) {
     </div>
   );
 }
+
+export default React.memo(AttemptsList);

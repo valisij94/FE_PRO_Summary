@@ -1,6 +1,5 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import React, { useState } from "react";
 import Input from "../input/Input";
-import AttemptsList from "../attempts/AttemptsList";
 import styles from './LoginForm.module.css';
 import CurrentDate from "./CurrentDate";
 
@@ -16,8 +15,6 @@ const LoginForm = () => {
             isError: false
         }
     } );
-
-    const [attempts, setAttempts] = useState([]);
 
     const onClickHandler = () => {
         const attemptData = {
@@ -35,7 +32,6 @@ const LoginForm = () => {
             isError: formState.passwd.value.length === 0
         }
         setFormState(newState);
-        setAttempts( [...attempts, attemptData] );
     }
 
     return (
@@ -73,7 +69,6 @@ const LoginForm = () => {
                 }}
             />
             <button className={styles.enterButton} onClick={onClickHandler}>Enter</button>
-            <AttemptsList attempts={attempts} dropAttempt={dropAttempt} />
         </div>
     )
 };

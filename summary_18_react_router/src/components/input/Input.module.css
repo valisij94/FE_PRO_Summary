@@ -1,0 +1,19 @@
+.inputContainer {
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px lightgray;
+    padding: 5px;
+    border: 1px solid lightgray;
+}
+
+.input:focus {
+    border-color: gray;
+}
+
+.errorInput {
+    border: 1px solid red;
+}
