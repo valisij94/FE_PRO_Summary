@@ -1,0 +1,30 @@
+.loginFormContainer {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  max-width: 200px;
+  margin: 10px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.enterButton {
+  border: none;
+  cursor: pointer;
+  background-color: #0096CD;
+  color: #FFF;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.enterButton:hover {
+  box-shadow: 5px 5px 15px lightgray;
+  background-color: #0085DE;
+}
+
+.loginFormHeader {
+  color: #0096CD;
+  font-weight: bold;
+  text-align: center;
+}

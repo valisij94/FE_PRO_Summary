@@ -1,0 +1,11 @@
+.headerButtonsContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
