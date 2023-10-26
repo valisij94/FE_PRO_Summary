@@ -1,18 +1,22 @@
 import React, { useEffect, useState } from "react";
 import Posts from "../../components/posts/Posts";
+import {useSelector, useDispatch} from 'react-redux';
+import { asyncPostsAction, responseReceivedAction } from "../../redux/posts/postsAction";
 
 function Feed() {
 
-  const [posts, setPosts] = useState([]);
+  const postsState = useSelector( state => state.posts );
+  const dispatch = useDispatch();
 
   useEffect( () => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-      .then( resp => resp.json() )
-      .then( res => setPosts(res));
+    dispatch( asyncPostsAction() );
+    // fetch('https://jsonplaceholder.typicode.com/posts')
+    //   .then( resp => resp.json() )
+    //   .then( res => dispatch(responseReceivedAction(res)) );
   }, [])
 
   return (
-    <Posts posts={posts} />
+    <Posts posts={postsState.posts} />
   );
 }
 

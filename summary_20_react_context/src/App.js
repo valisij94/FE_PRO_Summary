@@ -5,17 +5,11 @@ import Register from './pages/registrer/Register';
 import { Routes, Route, Link } from 'react-router-dom';
 import Feed from './pages/feed/Feed';
 import NewPost from './pages/newPost/NewPost';
-import { useDispatch } from 'react-redux';
 import Button from './components/button/Button';
-import { changeThemeAction } from './redux/theme/themeActions';
 
 function App() {
 
-  const dispatch = useDispatch();
-
-  const clickHandler = () => {
-    dispatch( changeThemeAction() )
-  }
+  const clickHandler = () => {}
 
   return (
       <div className="App">
